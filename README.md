@@ -4,9 +4,6 @@ CarbonNovo: Joint Design of Protein Structure and Sequence Using a Unified Energ
 <https://proceedings.mlr.press/v235/ren24e.html> 
 
 ### Installation
-**Required Libraries**
-CarbonNovo requires to install torch, esm2, and other libraries. Please follow these steps:
-
 ```bash
 conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 
@@ -24,7 +21,8 @@ Example:
 ```bash
 python predict.py sample_length=256 sample_number=4
 ```
-Here, sample_length denotes the length of proteins that needs to be sampled and sample_number denotes the number of samples.
+Here, sample_length denotes the length of the proteins to be sampled, and sample_number denotes the number of samples.
+
 
 ### Citation
 CarbonNovo: Joint Design of Protein Structure and Sequence Using a Unified Energy-based Model. M. Ren, T. Zhu, H. Zhang#. ICML 2024. https://openreview.net/attachment?id=FSxTEvuFa7&name=pdf
