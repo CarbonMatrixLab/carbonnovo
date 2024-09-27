@@ -6,10 +6,10 @@ CarbonNovo: Joint Design of Protein Structure and Sequence Using a Unified Energ
 ### Citation
 CarbonNovo: Joint Design of Protein Structure and Sequence Using a Unified Energy-based Model. M. Ren, T. Zhu, H. Zhang#. ICML 2024. https://openreview.net/attachment?id=FSxTEvuFa7&name=pdf
 
-### Installation
 
 *If you encounter any issues with the installation or would like to report a bug, please feel free to open an issue on GitHub at <https://github.com/CarbonMatrixLab/carbonnovo/issues>*.
 
+### Installation
 ```bash
 conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 
