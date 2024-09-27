@@ -15,7 +15,7 @@ pip install -r requirements.txt
 2. Download the ESM2 model weights from <https://dl.fbaipublicfiles.com/fair-esm/models/esm2_t33_650M_UR50D.pt> and <https://dl.fbaipublicfiles.com/fair-esm/regression/esm2_t33_650M_UR50D-contact-regression.pt>, and place them in the `./params` directory. 
 
 
-
+Please feel free to contact us if you have any problems with the installation (Haicang Zhang, zhanghaicang@ict.ac.cn).
 ### Usage
 Example:
 ```bash
