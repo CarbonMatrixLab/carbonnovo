@@ -1,11 +1,6 @@
 
 ###  CarbonNovo
-CarbonNovo: Joint Design of Protein Structure and Sequence Using a Unified Energy-based Model.
-<https://proceedings.mlr.press/v235/ren24e.html> 
-
-### Citation
-CarbonNovo: Joint Design of Protein Structure and Sequence Using a Unified Energy-based Model. M. Ren, T. Zhu, H. Zhang#. ICML 2024. https://openreview.net/attachment?id=FSxTEvuFa7&name=pdf
-
+CarbonNovo: Joint Design of Protein Structure and Sequence Using a Unified Energy-based Model. M. Ren, T. Zhu, H. Zhang#. ICML 2024. <https://proceedings.mlr.press/v235/ren24e.html> 
 
 *If you encounter any issues with the installation or would like to report a bug, please feel free to open an issue on GitHub at <https://github.com/CarbonMatrixLab/carbonnovo/issues>*.
 
