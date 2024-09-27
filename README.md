@@ -21,7 +21,7 @@ Example:
 ```bash
 python predict.py sample_length=256 sample_number=4
 ```
-Here, sample_length denotes the length of the proteins to be sampled, and sample_number denotes the number of samples.
+Here, sample_length denotes the length of the proteins to be sampled, and sample_number denotes the number of samples. The sampled structures and sequences will be put in the directory./output.
 
 
 ### Citation
