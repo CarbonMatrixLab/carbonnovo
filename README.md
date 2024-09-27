@@ -5,6 +5,8 @@ CarbonNovo: Joint Design of Protein Structure and Sequence Using a Unified Energ
 
 ### Citation
 CarbonNovo: Joint Design of Protein Structure and Sequence Using a Unified Energy-based Model. M. Ren, T. Zhu, H. Zhang#. ICML 2024. https://openreview.net/attachment?id=FSxTEvuFa7&name=pdf
+
+
 Correspondence should be addressed to Haicang Zhang (zhanghaicnag@ict.ac.cn).
 
 ### Installation
