@@ -1,0 +1,6 @@
+hydra-core
+dm-tree
+einops
+scipy
+biopython
+fair-esm==2.0.0

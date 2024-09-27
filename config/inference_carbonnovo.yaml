@@ -1,0 +1,21 @@
+defaults:
+  - model: carbonnovo
+  - transforms: carbonnovo_inference
+
+# path of model
+restore_model_ckpt: ./params/carbonnovo.ckpt
+
+gpu: 0
+
+# only support batch_size=1 for now
+batch_size: 1
+
+T: 100
+noise_scale: 0.1
+
+sample_length: 200
+sample_number: 4
+
+output_dir: ./output
+
+verbose: 1

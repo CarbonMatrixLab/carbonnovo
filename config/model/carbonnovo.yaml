@@ -1,0 +1,168 @@
+num_recycle: 3
+embeddings_and_seqformer:
+  lm:
+    enabled: true
+    model_path: './params/esm2_t36_3B_UR50D.pt'
+    repr_layer: 36
+    embed_channel: 2560
+  esm:
+    enabled: true
+    norm: true
+    dropout_rate: 0.1
+    embed_channel: 2560
+    num_layers: 36
+  seq_channel: 256
+  pair_channel: 128
+  timestep_embedder:
+   enabled: True
+   embedding_dim: 32
+   max_positions: 10000
+  max_relative_feature: 32
+  prev_pos:
+    max_bin: 21.375
+    min_bin: 3.375
+    num_bins: 15
+  recycle_features: true
+  recycle_pos: true
+  seqformer:
+    outer_product_mean:
+      dropout_rate: 0.0
+      num_outer_channel: 64
+      orientation: per_row
+      shared_dropout: true
+    pair_transition:
+      dropout_rate: 0.0
+      num_intermediate_factor: 4
+      orientation: per_row
+      shared_dropout: true
+    seq_attention_with_pair_bias:
+      dropout_rate: 0.0
+      num_head: 32
+      orientation: per_row
+      shared_dropout: false
+    seq_transition:
+      dropout_rate: 0.0
+      num_intermediate_factor: 4
+      orientation: per_row
+      shared_dropout: true
+    triangle_attention_ending_node:
+      dropout_rate: 0.0
+      gating: true
+      num_head: 4
+      orientation: per_column
+      shared_dropout: false
+    triangle_attention_starting_node:
+      dropout_rate: 0.0
+      gating: true
+      num_head: 4
+      orientation: per_row
+      shared_dropout: false
+    triangle_multiplication_incoming:
+      dropout_rate: 0.0
+      gating: true
+      num_head: 4
+      num_intermediate_channel: 128
+      orientation: per_column
+      shared_dropout: false
+    triangle_multiplication_outgoing:
+      dropout_rate: 0.0
+      gating: true
+      num_head: 4
+      num_intermediate_channel: 128
+      orientation: per_row
+      shared_dropout: false
+  seqformer_num_block: 1
+heads:
+  distogram:
+    enabled: true
+    first_break: 2.3125
+    last_break: 21.6875
+    num_bins: 64
+  structure_module:
+    enabled: true
+    clash_overlap_tolerance: 1.5
+    dropout: 0.0
+    num_channel: 384
+    num_head: 12
+    num_layer: 8
+    num_layer_in_transition: 3
+    num_point_qk: 4
+    num_point_v: 8
+    num_scalar_qk: 16
+    num_scalar_v: 16
+    position_scale: 10
+    torsion:
+      atom_clamp_distance: 10
+      num_channel: 128
+      num_residual_block: 2
+  sequence:
+    enabled: true
+    prev_pos:
+      max_bin: 21.375
+      min_bin: 3.375
+      num_bins: 15
+    inverseformer:
+      seq_channel: 384
+      pair_channel: 128
+      seqformer_num_block: 4
+      num_recycle: 0
+      recycle_feature: false
+      num_atom: 5
+      max_relative_feature: 32
+      pair_dist_channel: 400
+      seq_attention_with_pair_bias:
+        orientation: per_row
+        num_head: 8
+        dropout_rate: 0
+        shared_dropout: true
+      seq_transition:
+        orientation: per_row
+        num_intermediate_factor: 2
+        dropout_rate: 0.1
+        shared_dropout: false
+      outer_product_mean:
+        orientation: per_row
+        num_outer_channel: 32
+        dropout_rate: 0
+        shared_dropout: true
+      triangle_multiplication_outgoing:
+        orientation: per_row
+        num_intermediate_channel: 128
+        gating: true
+        num_head: 4
+        dropout_rate: 0.1
+        shared_dropout: false
+      triangle_multiplication_incoming:
+        orientation: per_column
+        num_intermediate_channel: 128
+        gating: true
+        num_head: 4
+        dropout_rate: 0.1
+        shared_dropout: false
+      triangle_attention_starting_node:
+        orientation: per_row
+        num_head: 4
+        gating: true
+        dropout_rate: 0.1
+        shared_dropout: false
+      triangle_attention_ending_node:
+        orientation: per_column
+        num_head: 4
+        gating: true
+        dropout_rate: 0.1
+        shared_dropout: false
+      pair_transition:
+        orientation: per_row
+        num_intermediate_factor: 4
+        dropout_rate: 0
+        shared_dropout: true
+  predicted_lddt:
+    enabled: false
+    num_bins: 50
+    num_channel: 128
+    structure_module_num_channel: 384
+  tmscore:
+    enabled: false
+    num_atom: 5
+  metric:
+    enabled: false
