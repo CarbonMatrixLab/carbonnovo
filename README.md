@@ -13,7 +13,7 @@ pip install -r requirements.txt
 ```
 **Model weights**
 1. Download CarbonNovo model weights from <https://carbonnovo.s3.amazonaws.com/params.tar>, and place them in the ./params directory.
-2. Download the ESM2 model weights from <https://dl.fbaipublicfiles.com/fair-esm/models/esm2_t33_650M_UR50D.pt> and <https://dl.fbaipublicfiles.com/fair-esm/regression/esm2_t33_650M_UR50D-contact-regression.pt>, and place them in the `./params` directory. 
+2. Download the ESM2 model weights from <https://dl.fbaipublicfiles.com/fair-esm/models/esm2_t36_3B_UR50D.pt> and <https://dl.fbaipublicfiles.com/fair-esm/regression/esm2_t36_3B_UR50D-contact-regression.pt>, and place them in the `./params` directory. 
 
 This is a simple, runnable version. We will improve the code and upload the full version shortly.
 
